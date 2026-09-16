@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: workbridge-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        value: mongodb+srv://musku2200_db_user:Mongo%402005*@cluster0.c01pktu.mongodb.net/workbridge
+      - key: JWT_SECRET
+        value: workbridge_super_secret_jwt_key_2024
+      - key: NODE_ENV
+        value: production
+      - key: RAZORPAY_KEY_ID
+        value: rzp_test_Sd676iS0fTuqjx
+      - key: RAZORPAY_KEY_SECRET
+        value: 0vET8VrsoyPqKCiJTcwJbM0F
