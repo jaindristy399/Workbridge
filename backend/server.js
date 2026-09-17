@@ -15,6 +15,7 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:5174',
   'https://workbridge-frontend-jet.vercel.app',
+  'https://workbridgeeeee.netlify.app',
   /\.vercel\.app$/
 ];
 
