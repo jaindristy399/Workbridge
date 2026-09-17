@@ -55,9 +55,10 @@ router.post('/login', async (req, res) => {
               isTopRated: user.isTopRated, jobsCompleted: user.jobsCompleted,
               totalEarnings: user.totalEarnings, availability: user.availability }
     });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server error' });}
+
 });
 
 // GET /api/auth/me
